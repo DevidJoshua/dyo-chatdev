@@ -10,6 +10,10 @@ export default defineConfig(({ mode }) => {
     plugins: [vue()],
     server: {
       host: true,
+      allowedHosts: [
+        'localhost',
+        'agent.deyo.my.id'
+      ],
       proxy: {
         '/api': {
           target: target,

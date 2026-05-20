@@ -14,7 +14,7 @@ server: ## Start the backend server in the background
 
 .PHONY: client
 client: ## Start the frontend development server
-	@cd frontend && npx cross-env VITE_API_BASE_URL=http://localhost:6400 npm run dev
+	@cd frontend && npx cross-env VITE_API_BASE_URL=http://deyo.my.id:6400 npm run dev
 
 .PHONY: stop
 stop: ## Stop backend and frontend servers cross-platform
